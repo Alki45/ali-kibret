@@ -204,9 +204,10 @@ export default function ALXSoftSkillsCertificate() {
                     variant="outline"
                     size="sm"
                     className="w-full justify-start border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
+                    onClick={() => window.open("https://alxafrica.com", "_blank")}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    View Certificate
+                    Learn More
                   </Button>
                 </CardContent>
               </Card>

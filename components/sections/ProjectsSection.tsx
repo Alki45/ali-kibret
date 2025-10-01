@@ -56,7 +56,7 @@ export function ProjectsSection() {
       longDescription: "Developed a comprehensive sign language transcription system that can recognize Amharic sign language in real-time. The system uses advanced computer vision techniques combined with deep learning models to accurately translate hand gestures into text. Built with Python, OpenCV, and TensorFlow, it achieves high accuracy in various lighting conditions and hand positions. This project represents my passion for using AI to solve accessibility challenges in Ethiopia.",
       technologies: ["Python", "TensorFlow", "OpenCV", "Deep Learning", "Computer Vision", "Real-time Processing"],
       github: "https://github.com/Alki45/Amharic-sign-Language-Transcription.git",
-      demo: "#",
+      demo: null,
       metrics: "⭐ Favorite Project",
       icon: <Brain className="w-6 h-6" />,
       color: "text-purple-500",
@@ -89,7 +89,7 @@ export function ProjectsSection() {
       longDescription: "Comprehensive exploratory data analysis on solar radiation datasets from three African countries. The project focuses on data cleaning, profiling, and comparative analytics to provide preliminary insights into solar power potential and environmental impacts. Built with Python and advanced visualization libraries to deliver actionable insights for solar energy planning.",
       technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter"],
       github: "https://github.com/Alki45/solar-data-discovery-Week0.git",
-      demo: "#",
+      demo: null,
       metrics: "10 Academy Week 0",
       icon: <Target className="w-6 h-6" />,
       color: "text-yellow-500",
@@ -122,7 +122,7 @@ export function ProjectsSection() {
       longDescription: "Developed a sophisticated stock price prediction system that combines NLP sentiment analysis with time-series forecasting. The project analyzes financial news headlines to extract sentiment scores and correlates them with stock price movements. Features include sentiment scoring, technical indicator calculation, and predictive modeling using LSTM and ARIMA models.",
       technologies: ["Python", "NLP", "NLTK", "TextBlob", "Pandas", "TensorFlow", "LSTM"],
       github: "https://github.com/Alki45/stock-prediction-nlp-week1.git",
-      demo: "#",
+      demo: null,
       metrics: "10 Academy Week 1",
       icon: <TrendingUp className="w-6 h-6" />,
       color: "text-green-500",
@@ -155,7 +155,7 @@ export function ProjectsSection() {
       longDescription: "Comprehensive insurance analytics project that uses machine learning to predict claim risks and optimize insurance pricing. The system analyzes historical insurance data, customer demographics, and claim patterns to build predictive models. Features include risk scoring, customer segmentation, and automated premium recommendations based on risk profiles.",
       technologies: ["Python", "Scikit-learn", "Pandas", "XGBoost", "Random Forest", "Feature Engineering"],
       github: "https://github.com/Alki45/insurance-risk-analytics-predictive-modeling.git",
-      demo: "#",
+      demo: null,
       metrics: "Risk Prediction",
       icon: <BarChart3 className="w-6 h-6" />,
       color: "text-orange-500",
@@ -183,7 +183,7 @@ export function ProjectsSection() {
     },
     {
       id: 5,
-      title: "Book-Family: AI-Powered Book Community",
+      title: "Book-Family Community Platform",
       description: "Advanced Book Community Website built with Vue.js, Golang, and Python featuring AI-powered recommendations, advanced search, and engaging user experience.",
       longDescription: "Book-family is a comprehensive book community platform that brings together book enthusiasts with cutting-edge technology. Built with a modern tech stack including Vue.js for the frontend, Golang for high-performance backend services, and Python for AI-powered recommendation engine. The platform features advanced search capabilities, personalized book recommendations, user reviews, and a vibrant community experience.",
       technologies: ["Vue.js", "Golang", "Python", "AI/ML", "REST API", "PostgreSQL"],
@@ -429,39 +429,18 @@ export function ProjectsSection() {
                         </div>
                       </div>
 
-                      {/* Demo Section */}
+                      {/* Demo Section (only if real demo URL exists) */}
+                      {project.demo && (
                       <div className="bg-card/50 p-6 rounded-lg border">
                         <h3 className="text-lg font-semibold text-foreground mb-4">Live Demo</h3>
-                        <div className="flex items-center justify-center h-32 bg-muted/50 rounded-lg mb-4">
-                          {isDemoRunning ? (
-                            <div className="text-center">
-                              <div className="animate-spin w-8 h-8 border-2 border-primary border-t-transparent rounded-full mx-auto mb-2"></div>
-                              <p className="text-sm text-muted-foreground">Running demo...</p>
-                            </div>
-                          ) : (
-                            <div className="text-center">
-                              <Play className="w-12 h-12 text-primary mx-auto mb-2" />
-                              <p className="text-sm text-muted-foreground">Click to start demo</p>
-                            </div>
-                          )}
-                        </div>
                         <div className="flex gap-2">
                           <Button
-                            onClick={() => startDemo(project.id)}
-                            disabled={isDemoRunning}
-                            className="btn-professional text-white"
-                          >
-                            {isDemoRunning ? (
-                              <>
-                                <Pause className="w-4 h-4 mr-2" />
-                                Running...
-                              </>
-                            ) : (
-                              <>
-                                <Play className="w-4 h-4 mr-2" />
-                                Start Demo
-                              </>
-                            )}
+                              variant="outline"
+                              onClick={() => window.open(project.demo as string, '_blank')}
+                              className="border-secondary/20 text-secondary hover:bg-secondary hover:text-white"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Open Live Demo
                           </Button>
                           <Button
                             variant="outline"
@@ -473,6 +452,7 @@ export function ProjectsSection() {
                           </Button>
                         </div>
                       </div>
+                      )}
 
                       {/* Action Buttons */}
                       <div className="flex gap-4 pt-4">
@@ -483,14 +463,16 @@ export function ProjectsSection() {
                           <Github className="w-4 h-4 mr-2" />
                           View on GitHub
                         </Button>
+                        {project.demo && (
                         <Button
                           variant="outline"
-                          onClick={() => window.open(project.demo, '_blank')}
+                            onClick={() => window.open(project.demo as string, '_blank')}
                           className="border-secondary/20 text-secondary hover:bg-secondary hover:text-white flex-1"
                         >
                           <ExternalLink className="w-4 h-4 mr-2" />
                           Live Demo
                         </Button>
+                        )}
                       </div>
                     </div>
                   </>
