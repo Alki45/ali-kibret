@@ -76,7 +76,7 @@ export function ProjectsSection() {
         "Ethiopian sign language complexity"
       ],
       results: [
-        "95% accuracy in controlled environments",
+        "85% accuracy in controlled environments",
         "85% accuracy in varying lighting",
         "Real-time processing under 100ms",
         "Successfully deployed for testing"

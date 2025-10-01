@@ -93,16 +93,11 @@ export function HeroSection({ isVisible, scrollToSection }: HeroSectionProps) {
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-primary mb-1">
-              <AnimatedCounter end={15} duration={2} />+
+              <AnimatedCounter end={6} duration={2} />+
             </div>
             <div className="text-sm text-muted-foreground">Technologies</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-secondary mb-1">
-              <AnimatedCounter end={95} duration={2} />%
-            </div>
-            <div className="text-sm text-muted-foreground">Accuracy</div>
-          </div>
+
         </div>
 
         {/* CTA Buttons */}
