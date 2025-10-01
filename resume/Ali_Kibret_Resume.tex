@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ali Kibret Muhamed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ali Kibret Muhamed} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faMapMarker\ Adama, Ethiopia ~
+    \raisebox{-0.1\height}\faPhone\ +251 925 594 543 \\ \vspace{3pt}
+    \href{mailto:alikibretmuhamed@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{alikibretmuhamed@gmail.com}} ~ 
+    \href{https://linkedin.com/in/ali-kibret}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ali-kibret}}  ~
+    \href{https://github.com/Alki45}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Alki45}} ~
+    \href{https://alikibret-portfolio.com}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFILE-----------
+\section{Profile}
+  Detail-oriented Junior Data Analyst and Python Developer with dual BSc degrees in Computer Science \& Engineering and Electronics \& Communication Engineering. Experienced in machine learning, computer vision, and real-world data-driven projects. Strong background in research, software development, and algorithmic problem solving with proven expertise in AI/ML implementation and data analysis.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Adama Science and Technology University}{Adama, Ethiopia}
+      {BSc in Computer Science \& Engineering and Electronics \& Communication Engineering}{Oct. 2019 -- Jul. 2024}
+      \resumeItemListStart
+        \resumeItem{Graduated with \textbf{Great Distinction} from rigorous dual-degree program}
+        \resumeItem{Specialized in software systems, embedded systems, machine learning, and electronics}
+        \resumeItem{Completed industry-relevant capstone project on Amharic Sign Language Transcription using Deep Learning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Academic Research Assistant}{Oct. 2024 -- Present}
+      {Adama Science and Technology University}{Adama, Ethiopia}
+      \resumeItemListStart
+        \resumeItem{Support cutting-edge research in Artificial Intelligence, computer vision, and networking technologies}
+        \resumeItem{Assist students during laboratory sessions and debug complex technical issues across multiple domains}
+        \resumeItem{Proofread and review academic papers ensuring quality and accuracy of research documentation}
+        \resumeItem{Organize and maintain comprehensive research documentation and experimental data}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Quad Dog Robot Development Intern}{Jul. 2023 -- Oct. 2023}
+      {ASTU - Computer Science \& Engineering Department}{Adama, Ethiopia}
+      \resumeItemListStart
+        \resumeItem{Developed autonomous quadruped robot using Python, OpenCV, and machine learning algorithms}
+        \resumeItem{Implemented object detection and avoidance system improving detection accuracy by 15\%}
+        \resumeItem{Integrated real-time sensor processing and path planning algorithms for autonomous navigation}
+        \resumeItem{Collaborated with cross-functional team to deliver functional prototype within project timeline}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {IT Support and Maintenance Intern}{Jul. 2022 -- Sep. 2022}
+      {ICT Center -- ASTU}{Adama, Ethiopia}
+      \resumeItemListStart
+        \resumeItem{Maintained and troubleshot campus-wide computer and network infrastructure serving 10,000+ users}
+        \resumeItem{Provided technical support for software installations, configurations, and account management}
+        \resumeItem{Collaborated with IT team to ensure 99\% uptime of critical university systems}
+        \resumeItem{Documented technical procedures and created knowledge base for common issues}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Amharic Sign Language Transcription System} $|$ \emph{Python, TensorFlow, OpenCV, Deep Learning}}{Oct. 2023 -- Jul. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed real-time Amharic sign language transcription system using deep learning and computer vision}
+            \resumeItem{Achieved 95\% accuracy in controlled environments using CNN and LSTM neural networks}
+            \resumeItem{Implemented multi-hand tracking and lighting adaptation for robust performance}
+            \resumeItem{Created accessible communication tool for deaf community in Ethiopia -- \textbf{Favorite Project}}
+            \resumeItem{GitHub: \href{https://github.com/Alki45/Amharic-sign-Language-Transcription}{\underline{github.com/Alki45/Amharic-sign-Language-Transcription}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Solar Data Discovery \& Analysis} $|$ \emph{Python, Pandas, NumPy, Matplotlib, Seaborn}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{10 Academy Week 0 challenge: Analyzed solar radiation data from Benin, Sierra Leone, and Togo}
+            \resumeItem{Performed comprehensive EDA revealing solar power potential across three African countries}
+            \resumeItem{Generated actionable insights for sustainable solar energy development and investment planning}
+            \resumeItem{GitHub: \href{https://github.com/Alki45/solar-data-discovery-Week0}{\underline{github.com/Alki45/solar-data-discovery-Week0}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Stock Price Prediction with NLP} $|$ \emph{Python, NLP, NLTK, TextBlob, LSTM, TensorFlow}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{10 Academy Week 1: Applied NLP techniques to analyze financial news sentiment for stock predictions}
+            \resumeItem{Built sentiment analysis pipeline correlating news sentiment with stock price movements}
+            \resumeItem{Developed LSTM-based prediction model achieving strong correlation between sentiment and prices}
+            \resumeItem{GitHub: \href{https://github.com/Alki45/stock-prediction-nlp-week1}{\underline{github.com/Alki45/stock-prediction-nlp-week1}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Insurance Risk Analytics \& Predictive Modeling} $|$ \emph{Python, Scikit-learn, XGBoost}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built machine learning models for insurance risk assessment and premium optimization}
+            \resumeItem{Implemented customer segmentation and claim prediction using advanced ML algorithms}
+            \resumeItem{Delivered actionable insights for risk stratification and pricing optimization}
+            \resumeItem{GitHub: \href{https://github.com/Alki45/insurance-risk-analytics-predictive-modeling}{\underline{github.com/Alki45/insurance-risk-analytics-predictive-modeling}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Book-Family: AI-Powered Book Community} $|$ \emph{Vue.js, Golang, Python, PostgreSQL}}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed full-stack book community platform with AI-powered recommendation engine}
+            \resumeItem{Implemented advanced search functionality and personalized user experience}
+            \resumeItem{Live Demo: \href{https://alki45.github.io/book_family/}{\underline{alki45.github.io/book\_family}} | GitHub: \href{https://github.com/Alki45/book_family}{\underline{github.com/Alki45/book\_family}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Lab Schedule Management System} $|$ \emph{HTML, CSS, JavaScript, Bootstrap}}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed web-based lab schedule management system for academic resource allocation}
+            \resumeItem{Implemented interactive calendar interface with automated conflict detection}
+            \resumeItem{Live Demo: \href{https://alki45.github.io/Lab_schedule/}{\underline{alki45.github.io/Lab\_schedule}}}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TRAINING & CERTIFICATIONS-----------
+\section{Training \& Certifications}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Data Structures \& Algorithms Program} $|$ \emph{A2SV (Africa to Silicon Valley)}}{Jan. 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Intensive competitive programming training solving challenges on LeetCode and Codeforces}
+            \resumeItem{Peer-based learning and mentorship in advanced algorithms and data structures}
+            \resumeItem{Website: \href{https://www.a2sv.org}{\underline{a2sv.org}}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{KAIM AI Mastery Program} $|$ \emph{10 Academy -- Kifiya}}{May 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Rigorous 6-month AI/ML bootcamp with hands-on industry projects and weekly challenges}
+            \resumeItem{Deep learning, NLP, computer vision, MLOps deployment, and production AI systems}
+            \resumeItem{Certificate: \href{https://drive.google.com/file/d/14XulDaSwaGjd2oosu8bpTIoa96Igh97B/view}{\underline{View Certificate}} | Program Details: \href{https://drive.google.com/file/d/1VTKqlDtebEbMS1SNq-QU0k7zJCy03d7f/view}{\underline{View Details}}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Data Science Nanodegree} $|$ \emph{ALX Africa}}{May 2023 -- Aug. 2024}
+          \resumeItemListStart
+            \resumeItem{Comprehensive 15-month training in Python, data analysis, statistics, and machine learning}
+            \resumeItem{Completed peer-reviewed projects on real-world datasets with industry standards}
+            \resumeItem{Certificate: \href{https://drive.google.com/file/d/1TmKqdZELGmUmk-dWgbLrNv3s2dXES6l4/view}{\underline{View Certificate}}}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+    
+    \textbf{Certifications:} 
+    \href{https://drive.google.com/file/d/1TmKqdZELGmUmk-dWgbLrNv3s2dXES6l4/view}{\underline{ALX Data Science}} (Aug. 2024) $\cdot$ 
+    Bioinformatics - Data Ocean (Jun. 2024) $\cdot$ 
+    ALX Tech Soft Skills (Aug. 2024) $\cdot$ 
+    \href{https://drive.google.com/file/d/1RhEhGNUJbAxOLp0SyO50XFkbNxrqo3Mw/view}{\underline{HackerRank Problem Solving (Intermediate)}} $\cdot$ 
+    \href{https://drive.google.com/file/d/1GQcsoPU4a9X6iA2bsD8ltgYEoCP77kfx/view}{\underline{ICPC ACPC Achievement}} $\cdot$ 
+    \href{https://drive.google.com/file/d/14XulDaSwaGjd2oosu8bpTIoa96Igh97B/view}{\underline{10 Academy KAIM AI Mastery}}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, SQL, JavaScript, C/C++, HTML/CSS, R} \\
+     \textbf{Frameworks \& Libraries}{: Django, React.js, Vue.js, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy} \\
+     \textbf{Data Analysis \& ML}{: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Jupyter, Statistical Analysis} \\
+     \textbf{Computer Vision \& AI}{: OpenCV, TensorFlow, Keras, Deep Learning, Neural Networks, CNN, LSTM} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, SQLite} \\
+     \textbf{Tools \& Technologies}{: Git/GitHub, Docker, Linux, Jupyter Notebooks, VS Code, LaTeX} \\
+     \textbf{Soft Skills}{: Research Writing, Technical Documentation, Problem Solving, Team Collaboration, Peer Mentoring}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Professional Working Proficiency} \\
+     \textbf{Amharic}{: Native Speaker} \\
+     \textbf{Arabic}{: Basic/Conversational}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INTERESTS-----------
+\section{Professional Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Competitive Programming $\cdot$ Machine Learning Research $\cdot$ Computer Vision Applications $\cdot$ Data Visualization $\cdot$ Open Source Contribution $\cdot$ Technical Writing $\cdot$ AI Ethics
+    }}
+ \end{itemize}
+
+\end{document}
+

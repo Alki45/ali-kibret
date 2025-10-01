@@ -52,12 +52,12 @@ export function ProjectsSection() {
     {
       id: 1,
       title: "Amharic Sign Language Transcription",
-      description: "Real-time sign language recognition system using deep learning and computer vision to bridge communication gaps for the deaf community in Ethiopia.",
-      longDescription: "Developed a comprehensive sign language transcription system that can recognize Amharic sign language in real-time. The system uses advanced computer vision techniques combined with deep learning models to accurately translate hand gestures into text. Built with Python, OpenCV, and TensorFlow, it achieves high accuracy in various lighting conditions and hand positions.",
+      description: "Real-time sign language recognition system using deep learning and computer vision to bridge communication gaps for the deaf community in Ethiopia. My favorite project!",
+      longDescription: "Developed a comprehensive sign language transcription system that can recognize Amharic sign language in real-time. The system uses advanced computer vision techniques combined with deep learning models to accurately translate hand gestures into text. Built with Python, OpenCV, and TensorFlow, it achieves high accuracy in various lighting conditions and hand positions. This project represents my passion for using AI to solve accessibility challenges in Ethiopia.",
       technologies: ["Python", "TensorFlow", "OpenCV", "Deep Learning", "Computer Vision", "Real-time Processing"],
-      github: "https://github.com/alki45/sign-language-transcription",
+      github: "https://github.com/Alki45/Amharic-sign-Language-Transcription.git",
       demo: "#",
-      metrics: "95% Accuracy",
+      metrics: "⭐ Favorite Project",
       icon: <Brain className="w-6 h-6" />,
       color: "text-purple-500",
       bgColor: "bg-purple-500/10",
@@ -84,200 +84,167 @@ export function ProjectsSection() {
     },
     {
       id: 2,
-      title: "Quadruped Autonomous Robot",
-      description: "Built an intelligent quadruped robot with object detection and autonomous navigation capabilities using Python and OpenCV.",
-      longDescription: "Developed a sophisticated quadruped robot during my internship at ASTU. The robot features advanced object detection using machine learning models and autonomous navigation algorithms. It can identify obstacles, plan paths, and navigate complex environments independently. The system integrates computer vision, machine learning, and robotics principles.",
-      technologies: ["Python", "OpenCV", "Machine Learning", "Robotics", "Computer Vision", "Autonomous Systems"],
-      github: "https://github.com/alki45/quadruped-robot",
+      title: "Solar Data Discovery",
+      description: "Week 0 challenge for 10 Academy's AI Mastery Program. Analyzing solar energy data from Benin, Sierra Leone, and Togo to uncover insights for sustainable solar energy development.",
+      longDescription: "Comprehensive exploratory data analysis on solar radiation datasets from three African countries. The project focuses on data cleaning, profiling, and comparative analytics to provide preliminary insights into solar power potential and environmental impacts. Built with Python and advanced visualization libraries to deliver actionable insights for solar energy planning.",
+      technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter"],
+      github: "https://github.com/Alki45/solar-data-discovery-Week0.git",
       demo: "#",
-      metrics: "Autonomous Navigation",
-      icon: <Cpu className="w-6 h-6" />,
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10",
-      borderColor: "border-blue-500/20",
+      metrics: "10 Academy Week 0",
+      icon: <Target className="w-6 h-6" />,
+      color: "text-yellow-500",
+      bgColor: "bg-yellow-500/10",
+      borderColor: "border-yellow-500/20",
       features: [
-        "Autonomous navigation",
-        "Object detection and avoidance",
-        "Path planning algorithms",
-        "Real-time sensor processing",
-        "Stable locomotion control"
+        "Multi-country data analysis",
+        "Solar radiation profiling",
+        "Environmental impact assessment",
+        "Interactive visualizations",
+        "Comparative analytics"
       ],
       challenges: [
-        "Complex locomotion mechanics",
-        "Real-time sensor fusion",
-        "Obstacle detection accuracy",
-        "Power management"
+        "Multi-source data integration",
+        "Data quality assurance",
+        "Cross-country comparison",
+        "Meaningful insight extraction"
       ],
       results: [
-        "Successful autonomous navigation",
-        "90% obstacle detection accuracy",
-        "Stable locomotion on various terrains",
-        "Real-time processing capability"
+        "Comprehensive EDA completed",
+        "Solar potential insights identified",
+        "Country-wise comparative analysis",
+        "Actionable recommendations provided"
       ]
     },
     {
       id: 3,
-      title: "Stock Price Analysis & Forecasting",
-      description: "Advanced time-series machine learning models using LSTM and ARIMA to predict stock prices with high accuracy and interactive dashboards.",
-      longDescription: "Developed a comprehensive stock price prediction system using advanced time-series analysis and machine learning techniques. The system combines LSTM neural networks with ARIMA models to provide accurate price predictions. Features an interactive dashboard with real-time data visualization, technical indicators, and risk assessment tools.",
-      technologies: ["Python", "TensorFlow", "Pandas", "Plotly", "LSTM", "Time Series"],
-      github: "https://github.com/alki45/stock-forecasting",
+      title: "Stock Prediction with NLP",
+      description: "Week 1 challenge applying Natural Language Processing techniques to analyze financial news sentiment and predict stock price movements using advanced ML models.",
+      longDescription: "Developed a sophisticated stock price prediction system that combines NLP sentiment analysis with time-series forecasting. The project analyzes financial news headlines to extract sentiment scores and correlates them with stock price movements. Features include sentiment scoring, technical indicator calculation, and predictive modeling using LSTM and ARIMA models.",
+      technologies: ["Python", "NLP", "NLTK", "TextBlob", "Pandas", "TensorFlow", "LSTM"],
+      github: "https://github.com/Alki45/stock-prediction-nlp-week1.git",
       demo: "#",
-      metrics: "85% Accuracy",
+      metrics: "10 Academy Week 1",
       icon: <TrendingUp className="w-6 h-6" />,
       color: "text-green-500",
       bgColor: "bg-green-500/10",
       borderColor: "border-green-500/20",
       features: [
-        "LSTM neural network predictions",
-        "ARIMA time series analysis",
-        "Interactive dashboards",
-        "Real-time data processing",
-        "Risk assessment tools"
+        "News sentiment analysis",
+        "Financial NLP processing",
+        "Technical indicator calculation",
+        "LSTM price prediction",
+        "Correlation analysis"
       ],
       challenges: [
-        "Market volatility modeling",
+        "Sentiment accuracy",
         "Feature engineering",
         "Model overfitting prevention",
         "Real-time data integration"
       ],
       results: [
-        "85% prediction accuracy",
-        "Real-time dashboard updates",
-        "Multiple model ensemble",
-        "Successful backtesting"
+        "Accurate sentiment scoring",
+        "Strong sentiment-price correlation",
+        "Improved prediction accuracy",
+        "Comprehensive feature set"
       ]
     },
     {
       id: 4,
-      title: "Telecom User Behavior Analytics",
-      description: "Implemented clustering algorithms and predictive modeling to analyze user behavior patterns and predict churn with high precision.",
-      longDescription: "Developed a comprehensive analytics platform for telecom companies to understand user behavior and predict customer churn. The system uses advanced clustering algorithms (K-means) and machine learning models (Random Forest) to segment users and predict churn probability. Features include interactive visualizations, automated reporting, and actionable insights for business decisions.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Seaborn", "K-means", "Random Forest"],
-      github: "https://github.com/alki45/telecom-analytics",
+      title: "Insurance Risk Analytics & Predictive Modeling",
+      description: "Advanced predictive modeling for insurance risk assessment using machine learning to optimize premium calculations and identify high-risk profiles.",
+      longDescription: "Comprehensive insurance analytics project that uses machine learning to predict claim risks and optimize insurance pricing. The system analyzes historical insurance data, customer demographics, and claim patterns to build predictive models. Features include risk scoring, customer segmentation, and automated premium recommendations based on risk profiles.",
+      technologies: ["Python", "Scikit-learn", "Pandas", "XGBoost", "Random Forest", "Feature Engineering"],
+      github: "https://github.com/Alki45/insurance-risk-analytics-predictive-modeling.git",
       demo: "#",
-      metrics: "92% Precision",
+      metrics: "Risk Prediction",
       icon: <BarChart3 className="w-6 h-6" />,
       color: "text-orange-500",
       bgColor: "bg-orange-500/10",
       borderColor: "border-orange-500/20",
       features: [
+        "Risk score calculation",
         "Customer segmentation",
-        "Churn prediction models",
-        "Behavior pattern analysis",
-        "Interactive visualizations",
-        "Automated reporting"
+        "Claim prediction models",
+        "Premium optimization",
+        "Interactive dashboards"
       ],
       challenges: [
-        "Large dataset processing",
-        "Feature selection",
+        "Imbalanced dataset handling",
+        "Feature engineering",
         "Model interpretability",
-        "Real-time predictions"
+        "Real-world deployment"
       ],
       results: [
-        "92% churn prediction precision",
-        "Effective customer segmentation",
-        "Actionable business insights",
-        "Reduced customer churn by 15%"
+        "High prediction accuracy",
+        "Effective risk stratification",
+        "Optimized premium calculation",
+        "Actionable business insights"
       ]
     },
     {
       id: 5,
-      title: "Land Registration Management System",
-      description: "Comprehensive web application using Django framework with MySQL database for automated land registration and document management.",
-      longDescription: "Built a full-stack web application for land registration management using Django and MySQL. The system includes user authentication, document management, automated report generation, and a modern responsive UI. Features include role-based access control, document upload and processing, automated notifications, and comprehensive reporting capabilities.",
-      technologies: ["Django", "MySQL", "HTML/CSS", "JavaScript", "Bootstrap", "Python"],
-      github: "https://github.com/alki45/land-registration",
-      demo: "#",
-      metrics: "Full-Stack Solution",
-      icon: <Database className="w-6 h-6" />,
-      color: "text-cyan-500",
-      bgColor: "bg-cyan-500/10",
-      borderColor: "border-cyan-500/20",
-      features: [
-        "User authentication system",
-        "Document management",
-        "Automated reporting",
-        "Role-based access control",
-        "Responsive design"
-      ],
-      challenges: [
-        "Complex data relationships",
-        "File upload handling",
-        "Security implementation",
-        "Performance optimization"
-      ],
-      results: [
-        "Successful deployment",
-        "User-friendly interface",
-        "Efficient data management",
-        "Automated workflow"
-      ]
-    },
-    {
-      id: 6,
-      title: "Exit Exam Management System",
-      description: "Automated examination system with Django and MySQL featuring question bank management, automated grading, and comprehensive analytics.",
-      longDescription: "Developed a comprehensive examination management system for educational institutions. The system includes question bank management, automated exam generation, real-time grading, result analytics, and comprehensive reporting. Features include multiple question types, time management, plagiarism detection, and detailed performance analytics.",
-      technologies: ["Django", "MySQL", "Python", "HTML/CSS", "JavaScript", "Chart.js"],
-      github: "https://github.com/alki45/exam-management",
-      demo: "#",
-      metrics: "Automated Grading",
-      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Book-Family: AI-Powered Book Community",
+      description: "Advanced Book Community Website built with Vue.js, Golang, and Python featuring AI-powered recommendations, advanced search, and engaging user experience.",
+      longDescription: "Book-family is a comprehensive book community platform that brings together book enthusiasts with cutting-edge technology. Built with a modern tech stack including Vue.js for the frontend, Golang for high-performance backend services, and Python for AI-powered recommendation engine. The platform features advanced search capabilities, personalized book recommendations, user reviews, and a vibrant community experience.",
+      technologies: ["Vue.js", "Golang", "Python", "AI/ML", "REST API", "PostgreSQL"],
+      github: "https://github.com/Alki45/book_family.git",
+      demo: "https://alki45.github.io/book_family/",
+      metrics: "Live Demo Available",
+      icon: <Brain className="w-6 h-6" />,
       color: "text-indigo-500",
       bgColor: "bg-indigo-500/10",
       borderColor: "border-indigo-500/20",
       features: [
-        "Question bank management",
-        "Automated exam generation",
-        "Real-time grading",
-        "Performance analytics",
-        "Plagiarism detection"
+        "AI-powered book recommendations",
+        "Advanced search functionality",
+        "User reviews and ratings",
+        "Community discussions",
+        "Responsive modern UI"
       ],
       challenges: [
-        "Complex grading algorithms",
-        "Security measures",
+        "Recommendation algorithm design",
+        "Frontend-backend integration",
         "Performance optimization",
         "User experience design"
       ],
       results: [
-        "Automated grading system",
-        "Comprehensive analytics",
-        "Improved exam efficiency",
-        "Enhanced security"
+        "Fully functional platform",
+        "AI recommendation system",
+        "Engaging user interface",
+        "Live deployment successful"
       ]
     },
     {
-      id: 7,
-      title: "Intelligent Web Scraping & Data Pipeline",
-      description: "Advanced web scraping system with automated data collection, processing, and storage for research and business intelligence applications.",
-      longDescription: "Developed a sophisticated web scraping and data pipeline system that can extract, process, and store large amounts of data from various web sources. The system includes intelligent parsing, data cleaning, duplicate detection, and automated storage in multiple database formats. Features include rate limiting, proxy rotation, and robust error handling.",
-      technologies: ["Python", "BeautifulSoup", "Scrapy", "Selenium", "PostgreSQL", "Redis"],
-      github: "https://github.com/alki45/web-scraping-pipeline",
-      demo: "#",
-      metrics: "1M+ Records/Day",
-      icon: <Database className="w-6 h-6" />,
-      color: "text-emerald-500",
-      bgColor: "bg-emerald-500/10",
-      borderColor: "border-emerald-500/20",
+      id: 6,
+      title: "Lab Schedule Management System",
+      description: "Interactive web-based laboratory schedule management system for efficient resource allocation and time management in academic settings.",
+      longDescription: "Developed a comprehensive lab schedule management system designed for academic institutions. The web-based application provides an intuitive interface for managing laboratory sessions, resource allocation, and schedule conflicts. Features include calendar views, automated conflict detection, resource booking, and email notifications for students and faculty.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "GitHub Pages"],
+      github: "https://github.com/Alki45/Lab_schedule",
+      demo: "https://alki45.github.io/Lab_schedule/",
+      metrics: "Live & Deployed",
+      icon: <GraduationCap className="w-6 h-6" />,
+      color: "text-cyan-500",
+      bgColor: "bg-cyan-500/10",
+      borderColor: "border-cyan-500/20",
       features: [
-        "Multi-source data extraction",
-        "Intelligent data parsing",
-        "Automated data cleaning",
-        "Duplicate detection",
-        "Rate limiting & proxy rotation"
+        "Interactive calendar interface",
+        "Resource booking system",
+        "Conflict detection",
+        "User notifications",
+        "Mobile-responsive design"
       ],
       challenges: [
-        "Anti-scraping measures",
-        "Data quality assurance",
-        "Large-scale processing",
-        "Legal compliance"
+        "Schedule conflict resolution",
+        "User interface design",
+        "Real-time updates",
+        "Cross-device compatibility"
       ],
       results: [
-        "1M+ records processed daily",
-        "95% data accuracy",
-        "Automated pipeline operation",
-        "Scalable architecture"
+        "Deployed and in use",
+        "Efficient schedule management",
+        "Reduced booking conflicts",
+        "Positive user feedback"
       ]
     }
   ]

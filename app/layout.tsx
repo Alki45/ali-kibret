@@ -39,8 +39,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+    <html lang="en" className="dark scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased selection:bg-primary/20 selection:text-primary-foreground`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

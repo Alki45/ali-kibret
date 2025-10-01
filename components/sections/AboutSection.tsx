@@ -44,10 +44,46 @@ export function AboutSection() {
   }, [])
 
   const achievements = [
-    { icon: Award, label: "Great Distinction", value: "Graduation", color: "text-yellow-500" },
-    { icon: Target, label: "Projects", value: "6+", color: "text-primary" },
-    { icon: Users, label: "Research Assistant", value: "ASTU", color: "text-secondary" },
-    { icon: Zap, label: "Technologies", value: "15+", color: "text-purple-500" },
+    { 
+      icon: Award, 
+      label: "Great Distinction", 
+      value: "Great Distinction", 
+      displayValue: "🎓 BSc", 
+      numeric: false, 
+      color: "text-yellow-500",
+      bgColor: "bg-yellow-500/10",
+      description: "Dual degree graduation"
+    },
+    { 
+      icon: Target, 
+      label: "Projects Completed", 
+      value: "6+", 
+      displayValue: 6, 
+      numeric: true, 
+      color: "text-primary",
+      bgColor: "bg-primary/10",
+      description: "Real-world applications"
+    },
+    { 
+      icon: Users, 
+      label: "Research Assistant", 
+      value: "ASTU", 
+      displayValue: "ASTU", 
+      numeric: false, 
+      color: "text-secondary",
+      bgColor: "bg-secondary/10",
+      description: "Since Oct 2024"
+    },
+    { 
+      icon: Zap, 
+      label: "Technologies", 
+      value: "15+", 
+      displayValue: 15, 
+      numeric: true, 
+      color: "text-purple-500",
+      bgColor: "bg-purple-500/10",
+      description: "Languages & frameworks"
+    },
   ]
 
   const skills = [
@@ -87,45 +123,41 @@ export function AboutSection() {
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
                 I'm <span className="font-semibold text-foreground">Ali Kibret Muhamed</span>, a detail-oriented 
-                <span className="font-semibold text-primary"> Data Scientist</span> and 
+                <span className="font-semibold text-primary"> Junior Data Analyst</span> and 
                 <span className="font-semibold text-secondary"> Python Developer</span> with dual BSc degrees 
-                in Computer Science & Engineering and Electronics & Communication Engineering from 
-                Adama Science and Technology University.
+                in <span className="font-semibold text-foreground">Computer Science & Engineering</span> and 
+                <span className="font-semibold text-foreground">Electronics & Communication Engineering</span> from 
+                Adama Science and Technology University, graduated with <span className="font-semibold text-yellow-500">Great Distinction</span> in July 2024.
               </p>
               <p>
-                Currently serving as an <span className="font-semibold text-primary">Academic Research Assistant</span> at ASTU, 
+                Currently serving as an <span className="font-semibold text-primary">Academic Research Assistant</span> at ASTU since October 2024, 
                 I specialize in AI, computer vision, and networking research. My experience includes developing 
-                real-world projects like an Amharic Sign Language Transcription system and building autonomous 
-                quadruped robots with advanced object detection capabilities.
+                real-world projects like an <span className="font-semibold text-secondary">Amharic Sign Language Transcription system</span> using deep learning, 
+                and building <span className="font-semibold text-primary">autonomous quadruped robots</span> with advanced object detection capabilities using Python and OpenCV.
               </p>
               <p>
                 I'm passionate about <span className="font-semibold text-secondary">machine learning</span>, 
-                <span className="font-semibold text-primary"> computer vision</span>, and 
-                <span className="font-semibold text-purple-500"> algorithmic problem solving</span>. 
-                Currently enhancing my competitive programming skills through A2SV's intensive training program.
+                <span className="font-semibold text-primary"> computer vision</span>, 
+                <span className="font-semibold text-purple-500"> data analysis</span>, and 
+                <span className="font-semibold text-orange-500"> algorithmic problem solving</span>. 
+                Currently enhancing my competitive programming skills through <span className="font-semibold text-primary">A2SV's intensive Data Structures & Algorithms training program</span>, 
+                solving challenges on LeetCode and Codeforces while mentoring peers.
               </p>
             </div>
 
-            {/* Skills Progress */}
+            {/* Technical Expertise */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-foreground">Technical Expertise</h3>
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium text-foreground">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                      <div 
-                        className={`h-full ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                        style={{ 
-                          width: isVisible ? `${skill.level}%` : '0%',
-                          transitionDelay: `${index * 200}ms`
-                        }}
-                      />
-                    </div>
-                  </div>
+                  <Badge 
+                    key={skill.name}
+                    variant="outline"
+                    className="px-4 py-2 text-sm font-medium border-primary/20 hover:bg-primary hover:text-white transition-all duration-300 cursor-default"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    {skill.name}
+                  </Badge>
                 ))}
               </div>
             </div>
@@ -174,21 +206,43 @@ export function AboutSection() {
               {achievements.map((achievement, index) => (
                 <Card 
                   key={achievement.label}
-                  className="card-professional p-6 text-center group hover:scale-105 transition-all duration-300"
+                  className={`card-professional p-6 text-center group hover:scale-105 hover:shadow-2xl transition-all duration-500 cursor-pointer relative overflow-hidden ${achievement.bgColor}`}
                   style={{ animationDelay: `${index * 200}ms` }}
+                  title={achievement.description}
                 >
-                  <CardContent className="p-0">
-                    <achievement.icon className={`w-8 h-8 mx-auto mb-3 ${achievement.color} group-hover:scale-110 transition-transform`} />
-                    <div className="text-2xl font-bold text-foreground mb-1">
-                      <AnimatedCounter 
-                        end={achievement.value === "6+" ? 6 : achievement.value === "15+" ? 15 : 0} 
-                        duration={2}
-                      />
-                      {achievement.value.includes("+") ? "+" : ""}
+                  {/* Animated background gradient on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <CardContent className="p-0 relative z-10">
+                    {/* Icon with animated background */}
+                    <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${achievement.bgColor} flex items-center justify-center group-hover:rotate-12 transition-transform duration-500`}>
+                      <achievement.icon className={`w-8 h-8 ${achievement.color} group-hover:scale-125 transition-transform duration-300`} />
                     </div>
-                    <div className="text-sm text-muted-foreground font-medium">
+                    
+                    {/* Counter/Value Display */}
+                    <div className="text-3xl font-black text-foreground mb-2 group-hover:scale-110 transition-transform duration-300">
+                      {achievement.numeric && typeof achievement.displayValue === 'number' ? (
+                        <>
+                          {isVisible && <AnimatedCounter end={achievement.displayValue} duration={2} />}
+                          {achievement.value.includes("+") && <span className={achievement.color}>+</span>}
+                        </>
+                      ) : (
+                        <span className="text-xl font-extrabold">{achievement.displayValue}</span>
+                      )}
+                    </div>
+                    
+                    {/* Label */}
+                    <div className="text-sm text-muted-foreground font-semibold mb-1">
                       {achievement.label}
                     </div>
+                    
+                    {/* Description on hover */}
+                    <div className="text-xs text-muted-foreground/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">
+                      {achievement.description}
+                    </div>
+                    
+                    {/* Decorative shine effect */}
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   </CardContent>
                 </Card>
               ))}
@@ -212,10 +266,10 @@ export function AboutSection() {
                 variant="outline" 
                 size="sm"
                 className="border-secondary/20 text-secondary hover:bg-secondary hover:text-white bg-transparent"
-                onClick={() => window.open("https://linkedin.com/in/ali-kibret", "_blank")}
+                onClick={() => window.open("mailto:alikibretmuhamed@gmail.com")}
               >
                 <Mail className="w-4 h-4 mr-2" />
-                LinkedIn
+                Email Me
               </Button>
             </div>
           </div>

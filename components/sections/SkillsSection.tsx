@@ -195,39 +195,14 @@ export function SkillsSection() {
               className="card-professional group hover:scale-105 transition-all duration-300"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {skill.name}
-                  </CardTitle>
-                  <Badge 
-                    variant="secondary" 
-                    className={`${skillCategories[activeCategory].bgColor} ${skillCategories[activeCategory].color} border-0`}
-                  >
-                    {skill.level}%
-                  </Badge>
-                </div>
-                <p className="text-sm text-muted-foreground">
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                  {skill.name}
+                </CardTitle>
+                <p className="text-sm text-muted-foreground mt-2">
                   {skill.description}
                 </p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Proficiency</span>
-                    <span className="font-medium text-foreground">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                    <div 
-                      className={`h-full ${skillCategories[activeCategory].color.replace('text-', 'bg-')} rounded-full transition-all duration-1000 ease-out`}
-                      style={{ 
-                        width: isVisible ? `${skill.level}%` : '0%',
-                        transitionDelay: `${index * 150}ms`
-                      }}
-                    />
-                  </div>
-                </div>
-              </CardContent>
             </Card>
           ))}
         </div>

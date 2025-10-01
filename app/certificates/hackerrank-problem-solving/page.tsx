@@ -3,10 +3,10 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, Brain, Calendar, MapPin, ExternalLink, Award, BarChart3, Database } from "lucide-react"
+import { ArrowLeft, Code2, Calendar, MapPin, ExternalLink, Award, Trophy, Target } from "lucide-react"
 import Link from "next/link"
 
-export default function ALXDataScienceCertificate() {
+export default function HackerRankCertificate() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-40">
@@ -28,11 +28,13 @@ export default function ALXDataScienceCertificate() {
       <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <Brain className="w-10 h-10 text-white" />
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+              <Code2 className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl font-bold mb-4 text-foreground">ALX Africa Data Science Nanodegree</h1>
-            <p className="text-xl text-muted-foreground">Comprehensive Data Science Training Program</p>
+            <h1 className="text-4xl font-bold mb-4 text-foreground">HackerRank Problem Solving (Intermediate)</h1>
+            <p className="text-xl text-muted-foreground">
+              Algorithmic Thinking & Data Structures Proficiency
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -41,19 +43,18 @@ export default function ALXDataScienceCertificate() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Award className="w-5 h-5 text-primary" />
-                    Program Overview
+                    Certification Overview
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Completed ALX Africa's comprehensive Data Science Nanodegree program, a rigorous 15-month training
-                    designed to develop industry-ready data science professionals. The program combined theoretical
-                    foundations with hands-on practical projects using real-world datasets.
+                    Achieved HackerRank Problem Solving (Intermediate) certification by demonstrating proficiency 
+                    in algorithmic thinking, data structures, and problem-solving techniques. This certification 
+                    validates intermediate-level skills in competitive programming and coding challenges.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    The curriculum covered the entire data science pipeline from data collection and cleaning to
-                    advanced machine learning model deployment. All projects underwent peer review processes to ensure
-                    quality and industry standards.
+                    The assessment covered a wide range of algorithmic concepts including dynamic programming, 
+                    graph theory, advanced data structures, and optimization techniques under time constraints.
                   </p>
                 </CardContent>
               </Card>
@@ -61,28 +62,28 @@ export default function ALXDataScienceCertificate() {
               <Card className="bg-card border-border">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <BarChart3 className="w-5 h-5 text-secondary" />
-                    Core Curriculum
+                    <Target className="w-5 h-5 text-secondary" />
+                    Skills Demonstrated
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-4">
-                      <h4 className="font-semibold text-card-foreground">Data Analysis & Visualization</h4>
+                      <h4 className="font-semibold text-card-foreground">Data Structures</h4>
                       <ul className="space-y-1 text-muted-foreground text-sm">
-                        <li>• Python for Data Analysis (Pandas, NumPy)</li>
-                        <li>• Statistical Analysis & Hypothesis Testing</li>
-                        <li>• Data Visualization (Matplotlib, Seaborn, Plotly)</li>
-                        <li>• Exploratory Data Analysis (EDA)</li>
+                        <li>• Arrays & Linked Lists</li>
+                        <li>• Stacks, Queues & Heaps</li>
+                        <li>• Trees & Binary Search Trees</li>
+                        <li>• Hash Tables & Graphs</li>
                       </ul>
                     </div>
                     <div className="space-y-4">
-                      <h4 className="font-semibold text-card-foreground">Machine Learning</h4>
+                      <h4 className="font-semibold text-card-foreground">Algorithms</h4>
                       <ul className="space-y-1 text-muted-foreground text-sm">
-                        <li>• Supervised Learning (Regression, Classification)</li>
-                        <li>• Unsupervised Learning (Clustering, PCA)</li>
-                        <li>• Model Evaluation & Validation</li>
-                        <li>• Feature Engineering & Selection</li>
+                        <li>• Dynamic Programming</li>
+                        <li>• Greedy Algorithms</li>
+                        <li>• Graph Algorithms (BFS/DFS)</li>
+                        <li>• Sorting & Searching</li>
                       </ul>
                     </div>
                   </div>
@@ -92,31 +93,28 @@ export default function ALXDataScienceCertificate() {
               <Card className="bg-card border-border">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Database className="w-5 h-5 text-primary" />
-                    Key Projects Completed
+                    <Trophy className="w-5 h-5 text-primary" />
+                    Problem Categories Covered
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-4">
-                    <div className="border-l-4 border-primary pl-4">
-                      <h4 className="font-semibold text-card-foreground">Customer Segmentation Analysis</h4>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <h4 className="font-semibold text-card-foreground">String Manipulation</h4>
                       <p className="text-muted-foreground text-sm">
-                        Applied K-means clustering to segment customers based on purchasing behavior, resulting in
-                        actionable marketing insights.
+                        Advanced string algorithms including pattern matching, string transformations, and text processing.
                       </p>
                     </div>
-                    <div className="border-l-4 border-secondary pl-4">
-                      <h4 className="font-semibold text-card-foreground">Predictive Sales Forecasting</h4>
+                    <div className="border-l-4 border-blue-500 pl-4">
+                      <h4 className="font-semibold text-card-foreground">Graph Theory</h4>
                       <p className="text-muted-foreground text-sm">
-                        Built time-series models using ARIMA and LSTM to forecast sales with 87% accuracy for retail
-                        business optimization.
+                        Shortest path algorithms, minimum spanning trees, and graph traversal techniques.
                       </p>
                     </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h4 className="font-semibold text-card-foreground">Healthcare Data Analysis</h4>
+                    <div className="border-l-4 border-purple-500 pl-4">
+                      <h4 className="font-semibold text-card-foreground">Dynamic Programming</h4>
                       <p className="text-muted-foreground text-sm">
-                        Analyzed patient data to identify risk factors and built classification models for early disease
-                        detection.
+                        Optimization problems, memoization, and bottom-up approaches to complex challenges.
                       </p>
                     </div>
                   </div>
@@ -127,29 +125,29 @@ export default function ALXDataScienceCertificate() {
             <div className="space-y-6">
               <Card className="bg-card border-border">
                 <CardHeader>
-                  <CardTitle className="text-lg">Certificate Details</CardTitle>
+                  <CardTitle className="text-lg">Certification Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Calendar className="w-4 h-4 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Duration</p>
-                      <p className="text-sm text-muted-foreground">May 2023 - Aug 2024</p>
+                      <p className="font-medium text-card-foreground">Earned</p>
+                      <p className="text-sm text-muted-foreground">2024</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-4 h-4 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Format</p>
-                      <p className="text-sm text-muted-foreground">Online/Remote</p>
+                      <p className="font-medium text-card-foreground">Platform</p>
+                      <p className="text-sm text-muted-foreground">HackerRank</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Award className="w-4 h-4 text-primary" />
                     <div>
-                      <p className="font-medium text-card-foreground">Status</p>
-                      <Badge variant="secondary" className="bg-blue-100 text-blue-800">
-                        Completed
+                      <p className="font-medium text-card-foreground">Level</p>
+                      <Badge variant="secondary" className="bg-green-100 text-green-800">
+                        Intermediate
                       </Badge>
                     </div>
                   </div>
@@ -158,7 +156,7 @@ export default function ALXDataScienceCertificate() {
 
               <Card className="bg-card border-border">
                 <CardHeader>
-                  <CardTitle className="text-lg">Technical Skills Gained</CardTitle>
+                  <CardTitle className="text-lg">Programming Languages</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -166,26 +164,40 @@ export default function ALXDataScienceCertificate() {
                       Python
                     </Badge>
                     <Badge variant="outline" className="border-primary/30 text-primary">
-                      Pandas
+                      C++
                     </Badge>
                     <Badge variant="outline" className="border-primary/30 text-primary">
-                      NumPy
+                      Java
                     </Badge>
                     <Badge variant="outline" className="border-primary/30 text-primary">
-                      Scikit-learn
+                      JavaScript
                     </Badge>
-                    <Badge variant="outline" className="border-primary/30 text-primary">
-                      Matplotlib
-                    </Badge>
-                    <Badge variant="outline" className="border-primary/30 text-primary">
-                      Seaborn
-                    </Badge>
-                    <Badge variant="outline" className="border-primary/30 text-primary">
-                      Statistics
-                    </Badge>
-                    <Badge variant="outline" className="border-primary/30 text-primary">
-                      Machine Learning
-                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardHeader>
+                  <CardTitle className="text-lg">Key Competencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2" />
+                      <p className="text-sm text-muted-foreground">Time & Space Complexity Analysis</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2" />
+                      <p className="text-sm text-muted-foreground">Algorithm Optimization</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2" />
+                      <p className="text-sm text-muted-foreground">Problem Decomposition</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2" />
+                      <p className="text-sm text-muted-foreground">Code Quality & Best Practices</p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -199,16 +211,16 @@ export default function ALXDataScienceCertificate() {
                     variant="outline"
                     size="sm"
                     className="w-full justify-start border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                    onClick={() => window.open("https://alxafrica.com", "_blank")}
+                    onClick={() => window.open("https://www.hackerrank.com", "_blank")}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    ALX Africa Website
+                    HackerRank Profile
                   </Button>
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full justify-start border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
-                    onClick={() => window.open("https://drive.google.com/file/d/1TmKqdZELGmUmk-dWgbLrNv3s2dXES6l4/view?usp=sharing", "_blank")}
+                    className="w-full justify-start border-green-500 text-green-500 hover:bg-green-500 hover:text-white bg-transparent"
+                    onClick={() => window.open("https://drive.google.com/file/d/1RhEhGNUJbAxOLp0SyO50XFkbNxrqo3Mw/view?usp=sharing", "_blank")}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Certificate
@@ -222,3 +234,5 @@ export default function ALXDataScienceCertificate() {
     </div>
   )
 }
+
+
